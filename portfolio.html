@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Personal Portfolio Website</title>
+    <!----CSS link----->
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/25cd7136fb.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="hero">
+      <nav>
+       <!--<img src=  "logo.jpeg"> --->
+        <ul id="sidemenu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about ">About</a></li>
+          <li><a href="#services">Service</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()" ></i>
+        <!----<a href="#"  download class="btn"> Resume</a>--->
+      </nav>
+      <div class="content">
+        <span class="title">Web Developer</span>
+        <h1>Hello, I am <span>Chandrashekhar</span></h1>
+        <p > I am working on a professional, visually sophisticated and technologically proficient, responsive and multi-functional React Components. </p>
+        <a href="Resume chandu.docx" download class="btn">Download Resume</a>
+      </div>
+      <!----<img src="chandarshekhar 01.jpg" alt="mypic" class="img-profile"/>-->
+    </div>
+     <!--------------about me -------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+             <img src="chandra.png">
+          </div>
+          <div class="about-col-2">
+              <h1 class="sub-title">About Me</h1>
+              <p class="self">
+                My self Chandrashekhar. I'm Frontend Web Developer. I live in Sonebhadra Utter Pradesh and I'm persuing B.Tech (information technology) 
+                from Kamla Neharu Institute of Technology,Sultanpur.
+              </p>
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links " onclick="opentab('education')">Education</p>
+              </div>
+              <div class="tab-contents active-tab" id="skills" >
+                <ul>
+                  <li><span>Coding Language</span><br>C & C++ </li>
+                  <li><span>Web Development</span><br> Frontend Wev Development </li>
+                 
+                </ul>
+              </div>
+              <div class="tab-contents" id="experience">
+                <ul>
+                 <li><span>2023-Current</span><br> Internship at Bharat Intern</li>
+                 <li> <span>2022-2023</span><br>500+ problems solve at codechef(2 star)</li>
+                 <li><span>2019-2020</span><br> Leadership and management in School</li>
+                 <li> <span>2022</span><br> Hacker Rank(4 star)</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li><span>2021-2025</span><br>B.Tech from KNIT Sultanpur(I.T. Branch,currentaly in 3rd year)</li>
+                  <li><span>2019-2020</span><br>12th pass out from JNV Sonebhadra </li>
+                  <li><span>2017-2018</span><br>10th pass out from JNV Sonebhadra</li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------services----------------->
+<div   id="services">
+  <div class="container">
+    <h1 class="sub-title"> MY services</h1>
+    <div class="services-list">
+         <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Design</h2>
+          <p>Web designing is the process of planning,conceptualizing, and implementing the plan for designing a website in a way that is 
+            functional and offers a good user experience. User experience is central to the web designing process. 
+            Websites have an array of elements presented in ways that make them easy to navigate.</p>
+            <a href="https://www.indeed.com/career-advice/finding-a-job/what-is-web-designing#:~:text=Web%20design%20is%20the%20creation,content%20on%20a%20web%20page.">Learn more</a>
+         </div>
+         <div>
+          <i class="fa-solid fa-crop-simple"></i>
+          <h2>UI/UX Design</h2>
+          <p>UX design involves managing the user journey as they interact with a product or service, while UI 
+            design focuses on the actual construction of that product or service's interface. UI design is 
+            usually considered part of the UX design process. </p>
+          <a href="https://flatironschool.com/blog/what-is-ux-ui-design/">Learn more</a>
+         </div>
+         <div>
+          <i class="fa-brands fa-app-store-ios"></i>
+          <h2>App Design</h2>
+          <p>
+            App design is the look and feel of a mobile application.This includes all of the visual elements 
+            and interactive elements that impact how the app functions. Mobile app design combines two concepts—UI and UX. The user 
+            interface (UI) encompasses the app's look and feel.</p>
+          <a href="https://buildfire.com/tools-for-mobile-app-designers/#:~:text=App%20design%20is%20the%20look,the%20app's%20look%20and%20feel.">Learn more</a>
+         </div>
+    </div>
+  </div>
+</div>
+<!------------portfolio-------------->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-tittle">MY Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="netflix png.png">
+        <div class="layer">
+          <h3>Netflix</h3>
+            <a href="netflix/netflix.html"><i class="fa-solid fa-link">  click here</i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images.png" >
+        <div class="layer">
+        <h3>Temp Converter</h3>
+          <a href="temp converter/temp.html"><i class="fa-solid fa-link"> click here</i></a>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+<!-------------------------contacts---------------->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i>shekharsingh2370@gmail.com</p>
+        <p><i class="fa-solid fa-phone-volume"></i>9555095005</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/profile.php?id=100071407397185"><i class="fa-brands fa-facebook-square"></i></a>
+          <a href="https://www.linkedin.com/in/chandrashekhar-singh-453753234"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://instagram.com/iostream_5245/"><i class="fa-brands fa-square-instagram"></i></a>
+          <a href="https://twitter.com/shekhar_5245"><i class="fa-brands fa-square-x-twitter"></i></a>
+        </div>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn3">Submit</button>
+     </form>
+     <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>This is not copy right<i class="fa-solid fa-heart"></i>this website made by self </p>
+  </div>
+</div>
+    <!---------script------------------->
+<script>
+ var tablinks = document.getElementsByClassName("tab-links");
+ var tabcontents = document.getElementsByClassName("tab-contents");
+ function opentab(tabname){
+  for(tablink of tablinks)
+  {
+    tablink.classList.remove("active-link");
+  }
+  for(tabcontent of tabcontents)
+  {
+    tabcontent.classList.remove("active-tab");
+  }
+  event.currentTarget.classList.add("active-link");
+  document.getElementById(tabname).classList.add("active-tab");
+ }
+</script>
+
+<script>
+  var sidemenu = document.getElementById("sidemenu");
+
+  function openmenu(){
+    sidemenu.style.right = "0";
+  }
+  function closemenu(){
+    sidemenu.style.right = "-200px";
+  }
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyapFF8BPmnjZvpfwJeAN12A2sflEmNbEGmh8LdHpc1Xt462_YsdXdrAQI-FezBW9_U/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg") 
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent sucessfully"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+  </body>
+</html>
